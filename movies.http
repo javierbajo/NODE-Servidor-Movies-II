@@ -5,7 +5,7 @@ Content-Type: application/json
 ###
 
 // Muestra una película según su _id
-GET http://localhost:3000/movies/id/6455971c8cfbabd997af3be7
+GET http://localhost:3000/movies/id/645786bc311c9738c6ebeb53
 Content-Type: application/json
 ###
 
@@ -36,7 +36,7 @@ Content-Type: application/json
 }
 ###
 // Modifica película enviando su _id por la url
-PUT http://localhost:3000/movies/6455abc9ba9bf2adf191e916
+PUT http://localhost:3000/movies/645792c904675f90203d442b
 Content-Type: application/json
 
 {

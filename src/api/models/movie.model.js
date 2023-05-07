@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 
 const movieSchema = new Schema(
     {
-        title: {type: String, require: true},
+        title: {type: String, required: true},
         director: {type: String, required: true},
-        year: {type: Number, require: false},
+        year: {type: Number, required: false},
         genre: {type: String, required: true},
     },{
         timestamps: true,
@@ -14,6 +14,6 @@ const movieSchema = new Schema(
     }
 )
 
-const Movie = mongoose.model('movie', movieSchema);
+const Movie = mongoose.model('movies', movieSchema);
 
 module.exports = Movie;

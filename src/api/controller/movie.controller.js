@@ -3,7 +3,7 @@ const Movie = require('../models/movie.model.js')
 
 
 // Devuelve todas las películas
-const getMovies = async (req, res) => {
+const getAllMovies = async (req, res) => {
     try{
         const allMovies = await Movie.find()
         return res.status(200).json(allMovies);
@@ -101,7 +101,7 @@ const deleteMovies = async (req, res) => {
 }
 
 module.exports = {
-    getMovies,
+    getAllMovies,
     getMoviesId,
     getMoviesTitle,
     getMoviesGenre,

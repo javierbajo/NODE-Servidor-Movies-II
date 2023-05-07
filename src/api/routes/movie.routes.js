@@ -1,6 +1,6 @@
 const express = require('express');
 const {
-    getMovies, 
+    getAllMovies, 
     getMoviesId,
     getMoviesTitle,
     getMoviesGenre,
@@ -13,7 +13,8 @@ const {
 
 const router = express.Router();
 
-router.get('/', getMovies);
+router.get('/', getAllMovies);
+
 router.get('/id/:id', getMoviesId);
 router.get('/title/:title', getMoviesTitle);
 router.get('/genre/:genre', getMoviesGenre);

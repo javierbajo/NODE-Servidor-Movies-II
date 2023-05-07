@@ -4,7 +4,7 @@ Content-Type: application/json
 ###
 
 // Muestra un cine según su _id
-GET http://localhost:3000/cinemas/id/64578d77ee6fbcb3490197ae
+GET http://localhost:3000/cinemas/id/64578dd76452bfe94ebd9bcf
 Content-Type: application/json
 
 // Muestra la dirección del cine al mandar su nombre por la URL
@@ -31,7 +31,7 @@ Content-Type: application/json
 {
     "name": "Broadway",
     "location": "C/García Morato 34, 47006 Valladolid",
-    "movies": []
+    "movies": ["645786bc311c9738c6ebeb52"]
 }
 ###
 
@@ -39,3 +39,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/cinemas/64578d77ee6fbcb3490197b1
 Content-Type: application/json
 ###
+
+
+GET http://localhost:3000/cinemas/addmovie?idcinema=64578d77ee6fbcb3490197ad&idmovie=645786bc311c9738c6ebeb54
+Content-Type: application/json
