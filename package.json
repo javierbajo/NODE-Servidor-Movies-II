@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "movieseed":"node ./src/seeds/movies.seed.js"
+    "movieseed":"node ./src/seeds/movies.seed.js",
+    "cinemaseed":"node ./src/seeds/cinemas.seed.js"
   },
   "keywords": [],
   "author": "",

@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const routerMovie = require('./src/api/routes/movie.routes.js');
+const routerCinema = require('./src/api/routes/cinema.routes.js');
 
 
 const app = express();
@@ -11,6 +12,7 @@ connect();
 
 app.use(express.json());
 app.use('/movies', routerMovie);
+app.use('/cinemas', routerCinema);
 
 
 

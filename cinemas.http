@@ -1,0 +1,41 @@
+//Muestra todos los cines que hay en la DB
+GET http://localhost:3000/cinemas/
+Content-Type: application/json
+###
+
+// Muestra un cine según su _id
+GET http://localhost:3000/cinemas/id/64578d77ee6fbcb3490197ae
+Content-Type: application/json
+
+// Muestra la dirección del cine al mandar su nombre por la URL
+###
+GET http://localhost:3000/cinemas/name/Zuloaga
+Content-Type: application/json
+###
+
+// Crea un nuevo cine en la base de datos 
+POST http://localhost:3000/cinemas
+Content-Type: application/json
+
+{
+    "name": "Broadway",
+    "location": "C/García MORRAZO 34, 47006 Valladolid",
+    "movies": []
+}
+###
+
+// Modifica un cine en la DB mandando id en la URL y nuevos valores en el body
+PUT http://localhost:3000/cinemas/64578dd76452bfe94ebd9bcf
+Content-Type: application/json
+
+{
+    "name": "Broadway",
+    "location": "C/García Morato 34, 47006 Valladolid",
+    "movies": []
+}
+###
+
+// Elimina un cine de la base de datos mandando id en la URL
+DELETE http://localhost:3000/cinemas/64578d77ee6fbcb3490197b1
+Content-Type: application/json
+###
