@@ -41,5 +41,5 @@ Content-Type: application/json
 ###
 
 
-GET http://localhost:3000/cinemas/addmovie?idcinema=64578d77ee6fbcb3490197ad&idmovie=645786bc311c9738c6ebeb54
+GET http://localhost:3000/cinemas/addmovie?idcinema=64578d77ee6fbcb3490197ad&idmovie=645786bc311c9738c6ebeb52
 Content-Type: application/json
